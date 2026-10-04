@@ -249,7 +249,7 @@ footer > p { color: var(--muted); max-width: 850px; font-size: 14px; line-height
   .hero-art { top: 275px; height: 540px; }
   .hero-support { max-width: none; }
 }
-/* Official pre-launch */
+/* Social and launch styling */
 .hero-destination { color: #eee; }
 .nav-buy { color: #09090b; background: var(--red); border-color: var(--red); }
 .nav-buy:hover { background: #ff795d; }
@@ -270,3 +270,20 @@ footer > p { color: var(--muted); max-width: 850px; font-size: 14px; line-height
 .community-links { margin-top: 32px; }
 @media(max-width:800px) { header { gap: 10px; } header .brand { letter-spacing: 0; font-size: 14px; } .nav-buy { white-space: nowrap; padding: 10px; min-height: 42px; } }
 @media(max-width:360px) { header .brand { font-size: 12px; } .nav-buy { padding: 10px 8px; } }
+/* Verified live launch, preserving the original visual identity. */
+.hero-live { display: flex; align-items: center; gap: 24px; margin-top: 20px; font: 11px/1.5 monospace; color: var(--red); letter-spacing: .5px; }
+.hero-live a { color: #c5c1c7; text-decoration: underline; text-underline-offset: 4px; padding: 8px 0; }
+.full-contract { display: block; font: 13px/1.8 monospace; color: #c6c3cb; overflow-wrap: anywhere; user-select: all; }
+.contract-warning { font-size: 14px; color: var(--muted); max-width: 600px; line-height: 1.7; margin: 12px 0; }
+.contract .short-address { font-size: 24px; letter-spacing: 1px; color: #f1f0ec; }
+.contract-note { min-height: 20px; }
+.verified-links { display: flex; flex-wrap: wrap; gap: 12px 26px; margin-top: 25px; font: 11px/1.6 monospace; }
+.verified-links a { padding: 10px 0; border-bottom: 1px solid #ffffff30; color: #c7c3cb; }
+.verified-links a:hover { color: var(--red); }
+.final-destination { color: #bbb7bf; font-size: 16px; margin-bottom: 25px; }
+.compact-contract { max-width: 660px; margin-top: 30px; }
+.compact-contract .contract { background: #09090b60; }
+.compact-contract .full-contract { font-size: 12px; }
+.footer-top > div { flex-wrap: wrap; row-gap: 18px; }
+@media(max-width:600px) { .hero-art { top: 325px; } .hero { min-height: 860px; } .hero-live { gap: 16px; font-size: 10px; } .contract { flex-direction: row; align-items: center; padding: 20px 16px; gap: 12px; } .contract > div > span { font-size: 10px; } .contract button { font-size: 11px; padding: 13px; min-width: 137px; } .full-contract { font-size: 12px; } .hero-actions { flex-wrap: wrap; } }
+@media(max-width:600px) { .contract .short-address { font-size: 20px; letter-spacing: 0; white-space: nowrap; } }

@@ -1,4 +1,4 @@
-# PAYLOAD 27 — official pre-launch
+# PAYLOAD 27 — LIVE
 
 React, Vite, TypeScript, Tailwind CSS. No wallet connection, presale or transactions.
 
@@ -11,16 +11,11 @@ npm run build
 npm run preview
 ```
 
-## One launch configuration
+## Verified live configuration
 
-Edit `src/config.ts` only. Official socials are already configured:
+`src/config.ts` contains the official token name, ticker, network, contract, Pump.fun page, X, Telegram, website, Solscan token page, launch transaction, and launch status. The site is LIVE. Purchase buttons only open the official Pump.fun page; there are no wallets or internal swaps.
 
-- X: https://x.com/Payload_27
-- Telegram: https://t.me/payload27
-
-`pumpfun` and `contractAddress` remain empty. `launchStatus` automatically stays `prelaunch` until BOTH an official HTTPS URL under pump.fun and a nonempty contract are supplied. Providing both activates live mode: hero/header buy links and contract copy become available. Do not add dummy values.
-
-All social buttons read this configuration. Pre-launch Telegram and X actions open in new tabs with `noopener noreferrer`; there are no buy actions. The contract displays COMING SOON and its copy button is disabled.
+The contract is shown in token and final CTA areas, with a compact display plus full selectable address. Copy sends the full configured address, shows COPIED for 2.2 seconds, and announces success through an accessible live region. No holder rewards or market statistics are claimed.
 
 ## Artwork
 
