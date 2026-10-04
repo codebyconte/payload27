@@ -40,3 +40,16 @@ Fresh browser console after reload: no errors or warnings.
 - Open Graph/X title, exact description, large-image card, alt text and image metadata verified in rendered head and built HTML. Image exists in dist.
 - Production sharing origin is automatically supplied on Vercel; custom-domain deployments require VITE_SITE_URL. Actual public crawler fetch is unverified until deployed.
 - Existing generated artwork reused; no official replacement banner was supplied. Illustrated lore cards are intentional finished content; there are no unfinished visitor-facing placeholders besides required launch availability.
+
+## Production SEO and sharing
+
+Official canonical: https://www.payload27.com/ (user supplied).
+
+- Entire React page prerendered into initial HTML; production browser hydration passed without console warnings/errors.
+- Exactly one H1; lore, mission, token and community content is readable in delivered HTML without JavaScript.
+- Canonical, og:url, Open Graph and X large-image metadata share the official origin and a dedicated 1200×630 optimized JPEG card.
+- Truthful Organization/WebSite/WebPage JSON-LD links the supplied social accounts. No financial product/rating/FAQ markup added.
+- Generated robots.txt and single-canonical-page sitemap.xml; Vercel preview builds use noindex.
+- Apex-to-www permanent redirect configured; hashed assets receive immutable cache headers.
+- Automated SEO assertions passed via npm run check:seo.
+- Actual public domain returned HTTPS 200 before release. Search Console ownership/submission and real-user Core Web Vitals require follow-up outside the codebase.

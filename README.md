@@ -35,3 +35,13 @@ Open Graph and X share the existing `hero.jpg` artwork. The HTML metadata is pro
 The favicon is a compact visor/eyes/27 badge. Replace `public/favicon.svg` if you supply the official mascot icon.
 
 No deployment has been performed.
+
+## SEO production
+
+The official origin is `https://www.payload27.com`, defined in `src/seo.ts`. Optional `VITE_SITE_URL` overrides it for an intentional domain migration; preview deployments retain the official canonical and are noindex.
+
+The build prerenders the same React App into the delivered HTML, then hydrates it in the browser. Titles, descriptions, canonical, Open Graph, X Cards and truthful Organization/WebSite/WebPage JSON-LD are in initial HTML. `robots.txt` and the one-page `sitemap.xml` are generated from the same origin; hash sections are not separate indexable pages. No fabricated financial schema, ratings, statistics or partnerships.
+
+The social card is `public/social-card.jpg` (1200×630). Hashed build assets receive immutable cache headers; the social image uses a short cache so updates propagate. Apex-domain requests redirect permanently to the official www hostname on Vercel. No SPA catch-all rewrites are added.
+
+After publishing, verify the domain and submit `https://www.payload27.com/sitemap.xml` in Google Search Console. Search Console ownership requires the domain owner's account; no ranking or indexing time is guaranteed. Check real Core Web Vitals after traffic arrives. Social platforms may cache previews; use their inspectors or reshare after refresh when changing the card.
